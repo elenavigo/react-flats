@@ -34,7 +34,7 @@ class App extends Component {
       <div>
         <FlatList flats={flats} selectedFlat={selectedFlat} selectFlat={this.selectFlat} />
         <div className="map-container">
-          <GoogleMapReact defaultCenter={this.center()} defaultZoom={12} bootstrapURLKeys={{ key: 'AIzaSyAbwbl-VDcsW2nlfboz9PXt4F2cY9yjyCc' }}>
+          <GoogleMapReact defaultCenter={this.center()} defaultZoom={12}>
             <Marker lat={selectedFlat.lat} lng={selectedFlat.lng} />
           </GoogleMapReact>
         </div>
